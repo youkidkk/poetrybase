@@ -2,23 +2,21 @@
 
 Poetry のベースプロジェクト
 
-## 使用方法
+## 前提
 
-### 前提
-
-#### Python のインストール
+### Python のインストール
 
 - pip をインストール
 - Install Python 3.x for all users チェックしない
 - Add Python to environment variables チェック
 
-#### Pyenv のインストール
+### Pyenv のインストール
 
 ```shell
 pip install pyenv-win --target %USERPROFILE%\\.pyenv
 ```
 
-##### 環境変数（Pyenv)
+#### 環境変数（Pyenv)
 
 | 環境変数   | 値                                                                           |
 | ---------- | ---------------------------------------------------------------------------- |
@@ -27,28 +25,32 @@ pip install pyenv-win --target %USERPROFILE%\\.pyenv
 | PYENV_ROOT | %USERPROFILE%\.pyenv\pyenv-win                                               |
 | PATH       | %USERPROFILE%\.pyenv\pyenv-win\bin <br> %USERPROFILE%\.pyenv\pyenv-win\shims |
 
-#### Poetry のインストール
+### Poetry のインストール
 
 ```shell
 (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
 ```
 
-##### 環境変数 (Poetry)
+#### 環境変数 (Poetry)
 
 | 環境変数 | 値                       |
 | -------- | ------------------------ |
 | PATH     | %APPDATA%\Python\Scripts |
 
-##### 設定
+#### 設定
 
 ```shell
 # 仮想環境をプロジェクトディレクトリ内に作成
 poetry config virtualenvs.in-project true
 ```
 
-##### 問題
+## インストール
 
-###### 仮想環境の Python バージョン
+```shell
+poetry install
+```
+
+### 問題
 
 仮想環境の Python バージョンが pyproject.toml の指定と異なるものが設定される場合、  
 .venv ディレクトリを削除後に以下を実行
