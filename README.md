@@ -16,7 +16,13 @@ Poetry のベースプロジェクト
 pip install pyenv-win --target %USERPROFILE%\\.pyenv
 ```
 
-#### 環境変数（Pyenv)
+### 開発用依存パッケージのインストール
+
+```shell
+pip install black flake8 mypy pyinstaller
+```
+
+#### 環境変数（Pyenv）
 
 | 環境変数   | 値                                                                           |
 | ---------- | ---------------------------------------------------------------------------- |
