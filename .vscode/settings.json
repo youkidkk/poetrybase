@@ -10,5 +10,6 @@
     "{$workspaceFolder}/.venv/Lib/site-packages"
   ],
   "python.languageServer": "Pylance",
-  "python.terminal.activateEnvInCurrentTerminal": true
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.analysis.extraPaths": ["{$workspaceFolder}/.venv/Lib/site-packages"]
 }
