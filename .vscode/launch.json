@@ -6,7 +6,7 @@
       "type": "debugpy",
       "request": "launch",
       "program": "${workspaceFolderBasename}",
-      "console": "integratedTerminal"
+      "console": "integratedTerminal",
     },
     {
       "name": "Python デバッガー: 現在のファイル",
