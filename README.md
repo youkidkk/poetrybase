@@ -9,11 +9,10 @@ Poetry のベースプロジェクト
 
 ### Windows
 
-管理者権限で PowerShell を開き、以下を実行
+PowerShell を開き、以下を実行
 
 ```shell
 # pyenv-win のインストール
-Set-ExecutionPolicy RemoteSigned
 Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/pyenv-win/pyenv-win/master/pyenv-win/install-pyenv-win.ps1" -OutFile "./install-pyenv-win.ps1"; &"./install-pyenv-win.ps1"
 
 # Python 3.12 のインストール
