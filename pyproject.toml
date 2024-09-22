@@ -6,11 +6,11 @@ readme = "README.md"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
-python = "^3.10,<3.11"
+python = "^3.12,<3.13"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.3.3"
 pyinstaller = "^6.10.0"
+pytest = "^8.3.3"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
