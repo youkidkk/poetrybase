@@ -20,7 +20,8 @@ pyenv install 3.12.5
 pyenv global 3.12.5
 
 # poetry のインストール
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+[Environment]::SetEnvironmentVariable("Path", "$ENV:APPDATA\pypoetry\venv\Scripts;"+$ENV:Path, "User")
 
 # Python仮想環境をプロジェクトディレクトリ内に作成するように設定
 poetry config virtualenvs.in-project true
