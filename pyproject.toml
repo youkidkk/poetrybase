@@ -3,7 +3,7 @@ authors = []
 description = ""
 name = "poetrybase"
 readme = "README.md"
-version = "1.0.0"
+version = "1.0.1"
 
 [tool.poetry.dependencies]
 python = "^3.12,<3.13"
